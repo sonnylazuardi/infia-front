@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Infia</title>
+    <meta name="Description" content="Infia - Dagelan Website" />
+    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" href="dist/css/vendor.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand logo-head">
+            <a href="#">
+              <div class="logo"></div>
+            </a>
+          </li>
+          <li class="active">
+            <a href="index.html"><i class="fa fa-comment"></i> About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-filter"></i> Kanal</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-newspaper-o"></i> News</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-history"></i> Ongoing</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-paint-brush"></i> Work</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-phone"></i> Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div id="owl-example" class="owl-carousel">
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+          <div class="full-image"> <img src="dist/img/slider.jpg" alt=""> </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="dist/js/vendor.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-example").owlCarousel({
+        navigation : true, 
+        singleItem: true,
+        navigationText: [
+          "<i class='fa fa-chevron-left'></i>",
+          "<i class='fa fa-chevron-right'></i>"
+        ],
+      });
+      $(".full-image").imgLiquid();
+    });
+    </script>
+  </body>
+</html>
